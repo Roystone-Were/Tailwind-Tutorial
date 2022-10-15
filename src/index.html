@@ -15,11 +15,64 @@
     <!-- intro section -->
     <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-400">
       <!-- navbar -->
-      <nav class="w-full fixed top-0 bg-red-500">
-        <div class="container mx-auto">hello</div>
+      <nav class="w-full fixed top-0 bg-white">
+        <div class="container py-5 flex items-center justify-between mx-auto">
+          <div class="flex items-center gap-3">
+            <img class="w-8" src="images/logo.png" alt="" />
+            <span class="font-bold text-indigo-900 text-2xl">LichaDev</span>
+          </div>
+          <ul class="hidden md:flex gap-7 font-bold text-sm text-gray-600">
+            <li class="hover:text-gray-500">
+              <a href="#"> HOMEPAGE</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#"> ABOUT ME</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#"> SERVICES</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#"> PROJECTS</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#"> CONTACTS</a>
+            </li>
+          </ul>
+          <img
+            class="w-5 cursor-pointer hidden md:block"
+            src="images/moon.png"
+            alt=""
+          />
+          <div id="hamburger" class="cursor-pointer md:hidden space-y-1 z-20">
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+        </div>
+        <ul
+          id="menu"
+          class="bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-center text-white hidden"
+        >
+          <li class="">
+            <a href="#"> HOMEPAGE</a>
+          </li>
+          <li class="">
+            <a href="#"> ABOUT ME</a>
+          </li>
+          <li class="">
+            <a href="#"> SERVICES</a>
+          </li>
+          <li class="">
+            <a href="#"> PROJECTS</a>
+          </li>
+          <li class="">
+            <a href="#"> CONTACTS</a>
+          </li>
+        </ul>
       </nav>
       <!-- intro content -->
       <div></div>
     </div>
+    <script src="/src/app.js"></script>
   </body>
 </html>
